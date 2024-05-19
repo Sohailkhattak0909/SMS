@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMS</title>
+<link rel="stylesheet" href="CSS\style.css">
+</head>
+<body>
+    <nav>
+      <div class="logo"></div>
+        <ul class="nav_item">
+            <li class="item"><a href="about.html">About</a></li>
+          <li class="dropdown , item">
+            <a href="#"><img src="icon\white_bar.png" alt="menu" style=" width: 1.5rem;height: 1.5rem;"></a>
+            <div class="dropdown-content">
+              <a href="php\login.php">Dashboard</a> 
+            </div>
+          </li> 
+        </ul>
+      </nav>
+      <video id="video-background" autoplay loop muted>
+        <source src="icon/video.mp4" type="video/mp4">
+    </video>
+    <div class="sms_name">Welcome To KK Model School</div>
+
+      <div id="chatIcon" onclick="toggleChatbox()">
+        <span ><img src="icon\bot.gif" style="background-size: cover;width: 10rem;height: 8rem;"></span>
+    </div>
+    
+    
+    <div id="chatBox">
+        <div id="chatBoxHeader" onclick="toggleChatbox()">
+            <span>W-Chatbot</span>
+        </div>
+        <div id="chatBoxContent">
+            <!-- Chat messages will appear here -->
+        </div>
+        <div id="userInputContainer">
+            <input type="text" id="userInput" placeholder="Message W-Chatbot...">
+            <button id="searchButton" onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+
+    <script src="js\Events.js"></script>
+</body>
+</html>
